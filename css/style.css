@@ -1,0 +1,140 @@
+/* style.css */
+:root {
+    --primary: #2563eb;
+    --baru-bg: #dcfce7;
+    --baru-text: #166534;
+    --ubah-bg: #fef08a;
+    --ubah-text: #854d0e;
+    --tetap-bg: #e2e8f0;
+    --tetap-text: #334155;
+    --up-text: #dc2626;
+    --down-text: #16a34a;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f8fafc;
+    color: #0f172a;
+    margin: 0;
+    padding: 20px;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    background: white;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1);
+}
+
+header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.controls {
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+}
+
+.search-box {
+    position: relative;
+    flex: 1;
+    min-width: 300px;
+}
+
+.search-box input {
+    width: 100%;
+    padding: 10px 10px 10px 35px;
+    border: 1px solid #cbd5e1;
+    border-radius: 6px;
+    font-size: 14px;
+}
+
+.search-box i {
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #94a3b8;
+}
+
+.filters select {
+    padding: 10px;
+    border: 1px solid #cbd5e1;
+    border-radius: 6px;
+    background: white;
+    cursor: pointer;
+}
+
+.table-container {
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 12px 15px;
+    text-align: left;
+    border-bottom: 1px solid #e2e8f0;
+}
+
+th {
+    background-color: #f1f5f9;
+    font-weight: 600;
+}
+
+tbody tr:hover {
+    background-color: #f8fafc;
+    transition: background-color 0.2s;
+}
+
+.badge {
+    padding: 4px 8px;
+    border-radius: 12px;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.badge.baru { background: var(--baru-bg); color: var(--baru-text); }
+.badge.ubah { background: var(--ubah-bg); color: var(--ubah-text); }
+.badge.tetap { background: var(--tetap-bg); color: var(--tetap-text); }
+
+.tarif-lama {
+    text-decoration: line-through;
+    color: #64748b;
+    font-size: 13px;
+}
+
+.tarif-baru {
+    font-weight: bold;
+    color: #0f172a;
+}
+
+.persen.up { color: var(--up-text); font-weight: bold; }
+.persen.down { color: var(--down-text); font-weight: bold; }
+.persen.neutral { color: #64748b; }
+
+.btn-detail {
+    background: var(--primary);
+    color: white;
+    border: none;
+    padding: 6px 12px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 12px;
+}
+
+.btn-detail:hover {
+    background: #1d4ed8;
+}
+
+.hidden { display: none; }
+.loader { text-align: center; padding: 40px; color: #64748b; }
