@@ -1,6 +1,6 @@
 // app.js
 // Ganti dengan URL Web App dari GAS hasil deployment Anda
-const GAS_URL = "https://script.google.com/macros/s/YOUR_GAS_ID/exec";
+const GAS_URL = "https://script.google.com/macros/s/AKfycbyOHapS36FiuKilvEIq1msRQQ2wrBoTLoo-H1S-Q6IpMKpcSVj3yRyZDvCSNnS1cNqR/exec";
 let globalData = [];
 
 document.addEventListener("DOMContentLoaded", () => {
